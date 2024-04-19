@@ -1,0 +1,141 @@
+#p1 {
+  font-family: ubuntu-mono, monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.box1 {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #f08c4f;
+  text-decoration: none;
+  color: #efe0d2;
+  border-radius: 10%;
+}
+
+.box2 {
+  background-color: #edbc61;
+  border-radius: 10%;
+}
+
+.box3 {
+  display: inline-block;
+  background-color: #f0e290;
+  text-decoration: none;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20%;
+  line-height: 40px;
+}
+
+.box3:hover {
+  background-color: #f08c4f;
+  color: #efe0d2;
+  transition: all 0.05s;
+}
+
+.box4 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* qq */
+.box5 {
+  display: inline-block;
+  vertical-align: middle;
+  height: 300px;
+}
+
+.container1 {
+  width: 400px;
+  height: 300px;
+  background-color: #f08c4f;
+  color: #efe0d2;
+  display: table;
+  text-align: center;
+}
+
+.container1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100px;
+}
+
+.box6 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.box6::after {
+  vertical-align: middle;
+  height: 300px;
+}
+
+.box7 {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 區塊內的子區塊限制在範圍內 */
+.container2 {
+  width: 400px;
+  height: 300px;
+  background-color: #f08c4f;
+  position: relative;
+}
+
+.box8 {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.container3 {
+  width: 400px;
+  height: 300px;
+  background-color: #f08c4f;
+  /* 垂直 */
+  display: flex;
+  /* 直條置中 */
+  justify-content: center;
+  /* 長邊符合短邊置中 */
+  align-items: center;
+}
+
+.box9 {
+  padding: 30px 30px;
+  background-color: #edbc61;
+}
+
+.box10 {
+  width: 200px;
+  height: 200px;
+  background-color: #dd4e61;
+  color: bisque;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+}
+.container4 {
+  width: 600px;
+  height: 400px;
+  background-color: #8f8df3;
+  position: relative;
+}
+
+.box11 {
+  width: 100px;
+  height: 100px;
+  background-color: #edbc61;
+  position: fixed;
+}
