@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>個人檔案</title>
+</head>
+
+<body bgcolor="#F2889B">
+  <center>
+    <img src="https://api.fnkr.net/testimg/500x50/FFF8EE/95BFA4/?text=User Interest" alt="">
+  </center>
+  <form action="http://web113a.test:6080/0417/form.backen.php" method="post">
+    <fieldset>
+      <legend>個人資料</legend>
+      姓&nbsp;&nbsp名：<input type="text" name="username"><br>
+      性別：<input type="radio" name="usersex" value="male">男
+      <input type="radio" name="usersex" value="female">女
+      <input type="radio" name="usersex" value="Trans">跨性別<br>
+      最高學歷：
+      <select name="userschool">
+        <option value="">請選擇</option>
+        <option value="高中以下">高中以下</option>
+        <option value="大學">大學</option>
+        <option value="碩士">碩士</option>
+        <option value="博士">博士</option>
+      </select><br>
+      電子郵件：<input type="email" name="useremail"><br>
+
+    </fieldset>
+    <fieldset>
+      <legend>興趣</legend>
+      你有什麼興趣呢(可複選)？
+      <input type="checkbox" name="userinterest[]" value="music">音樂
+      <input type="checkbox" name="userinterest[]" value="movie">電影
+      <input type="checkbox" name="userinterest[]" value="sport">運動
+      <input type="checkbox" name="userinterest[]" value="game">遊戲
+      <input type="checkbox" name="userinterest[]" value="other">其他
+      <input type="checkbox" name="userinterest[]" value="none">沒有興趣<br>
+      你對自己的興趣有什麼想法呢？<br>
+      <textarea name="userthrough" cols="74" rows="5"></textarea><br>
+    </fieldset>
+    <input type="submit" value="送出">
+    <input type="submit" value="清除">
+
+  </form>
+
+</body>
+
+</html>
