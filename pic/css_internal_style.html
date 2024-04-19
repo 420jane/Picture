@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--匯入樣式<link rel="stylesheet" href="style.css"> -->
+
+  <style>
+    /* 內部樣式  */
+    h2 {
+      color: #F1EDE2;
+      background-color: #F2B6CC;
+    }
+
+    /*外部樣式*/
+    #jan {
+      color: #F1EDE2;
+      background-color: #D9BB62;
+    }
+
+    #qaz {
+      color: #048C66;
+      background-color: #C9D0D8;
+    }
+
+    /* 匯入樣式 */
+    @import "css/style.css"
+  </style>
+
+</head>
+
+<body style="background-color:#FFF">
+
+  內部樣式
+  <h2>Hellow World</h2>
+
+  外部樣式
+  <h2 id="jan" class="qaz">Hellow World</h2>
+
+  匯入樣式
+  <h2 id="jan" class="qaz">Hellow World</h2>
+
+  行內樣式
+  <h2 style="color:#F1EDE2; background-color:#F2B6CC">Hellow World</h2>
+
+</body>
+
+</html>
